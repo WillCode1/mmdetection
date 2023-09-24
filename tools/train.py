@@ -134,3 +134,13 @@ if __name__ == '__main__':
 
 # train_dataloader.batch_size = 4
 # val_dataloader.batch_size = 4
+# python tools/train.py configs/yolox/yolox_tiny_8xb8-300e_coco.py
+
+# --auto-scale-lr：学习率自动缩放
+# --work-dir ${WORK_DIR}: 覆盖工作目录.
+# --resume：自动从work_dir中的最新检查点恢复.
+# --resume ${CHECKPOINT_FILE}: 从某个 checkpoint 文件继续训练.
+# --cfg-options 'Key=value': 覆盖使用的配置文件中的其他设置.
+# 注意： resume 和 load-from 的区别：
+# resume 既加载了模型的权重和优化器的状态，也会继承指定 checkpoint 的迭代次数，不会重新开始训练。
+# load-from 则是只加载模型的权重，它的训练是从头开始的，经常被用于微调模型。其中load-from需要写入配置文件中，而resume作为命令行参数传入。
