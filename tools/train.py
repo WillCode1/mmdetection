@@ -131,3 +131,6 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+# train_dataloader.batch_size = 4
+# val_dataloader.batch_size = 4
