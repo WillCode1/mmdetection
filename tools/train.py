@@ -122,7 +122,7 @@ if __name__ == '__main__':
 
 # train_dataloader.batch_size = 4
 # val_dataloader.batch_size = 4
-# python tools/train.py configs/yolox/yolox_tiny_8xb8-300e_coco.py
+# python tools/train.py configs/mask_rcnn/mask-rcnn_r50_fpn_amp-1x_coco.py
 
 # --auto-scale-lr：学习率自动缩放
 # --work-dir ${WORK_DIR}: 覆盖工作目录.
