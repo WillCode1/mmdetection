@@ -17,3 +17,5 @@ torch.cuda.get_device_capability(device=0)
 print(torch.version.cuda)
 # 查看cudnn版本
 print(torch.backends.cudnn.version())
+# 查看cuda能力
+print(torch.cuda.get_device_capability(0))
